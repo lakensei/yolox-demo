@@ -91,6 +91,7 @@ public class YoloxController {
         imwrite(uploadPath + "/" + newFileName, src);
         // 文件名
         map.put("fileName", newFileName);
+        map.put("msg", "检查结果：");
 
         return "forward:/index";
     }
